@@ -1,13 +1,13 @@
 FROM golang:alpine
 ENV CGO_ENABLED=0
-WORKDIR /app
-COPY . .
+# WORKDIR /app
+# COPY . .
 
 FROM node:current-alpine
 ENV CGO_ENABLED=0
 WORKDIR /app
 COPY --from=0 /usr/local/go/ /usr/local/go/
-COPY --from=0 /app /app
+# COPY --from=0 /app /app
 ENV PATH="/usr/local/go/bin:${PATH}"
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:$PATH
