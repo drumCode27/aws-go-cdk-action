@@ -2,6 +2,7 @@
 
 echo "Executing command..."
 #printenv GITHUB_WORKSPACE
+
 echo "curr dir"
 pwd
 ls
