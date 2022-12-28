@@ -1,7 +1,7 @@
 #!/bin/sh -v
 
 echo "Executing command..."
-echo ls
+ls
 sh -c "$*"
 exit_code=$?
 
