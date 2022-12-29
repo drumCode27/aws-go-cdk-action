@@ -2,6 +2,7 @@
 
 echo "Executing command..."
 cd ${GITHUB_WORKSPACE}/${INPUT_WORKING_DIR}
+cat /github/workspace/README.md
 #printenv GITHUB_WORKSPACE
 #printf '%d args:' "$#"
 #printf " '%s'" "$@"
